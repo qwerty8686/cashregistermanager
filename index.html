@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>Parcel Sandbox</title>
+	<meta charset="UTF-8" />
+</head>
+
+<body>
+	<div className="text-center">
+		<h1 class="bg1 margin-bottom text-center">Cash Register Manager</h1>
+
+		<h2 class="decor margin-bottom">
+			Enter the bill amount and cash given and know minimum number of notes to
+			return.
+		</h2>
+		<form onsubmit="return false">
+			<h2 class="bg2 decor margin-bottom">Bill Amount </h2>
+			<input
+				id="bill"
+				type="number"
+				class="input margin decor margin-bottom"
+				placeholder="Enter Bill Amount"
+				required
+			></input>
+			<button id="next" class="button text decor">
+				Next
+			</button>
+			
+
+			<div id="hidden">
+				<h2 class="bg2 decor margin-bottom">Cash Given </h2>
+				<input
+					id="cash"
+					type="number"
+					class="input margin decor margin-bottom"
+					placeholder="Enter Cash Given"
+					required
+				></input>
+				<button id="check" class="button text decor">
+					Check
+				</button>
+			</div>
+
+			<h2 id="message" class="text-center"></h2>
+
+			<div id="hidden-table">
+				<table border="2" class="content-center table">
+					<tbody>
+						<tr class="text">
+							<td>
+								<strong>No of Notes</strong>
+							</td>
+							<td class="output"></td>
+							<td class="output"></td>
+							<td class="output"></td>
+							<td class="output"></td>
+							<td class="output"></td>
+							<td class="output"></td>
+							<td class="output"></td>
+						</tr>
+						<tr class="text">
+							<td>
+								<strong>Currency</strong>
+							</td>
+							<td>2000</td>
+							<td>500</td>
+							<td>100</td>
+							<td>20</td>
+							<td>10</td>
+							<td>5</td>
+							<td>1</td>
+						</tr>
+					</tbody>
+				</table>
+			</div>
+		</form>
+	</div>
+
+	<script src="src/index.js">
+	</script>
+</body>
+
+</html>

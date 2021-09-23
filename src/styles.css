@@ -1,0 +1,100 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@1,900&display=swap");
+
+body {
+  font-family: "Lato", sans-serif;
+  background-color: lightgrey;
+}
+
+:root {
+  --primary-color: #3b82f6;
+}
+.bg1 {
+  background-color: crimson;
+  border-radius: 1rem;
+  width: fit-content;
+  padding: 0.5rem;
+  display: block;
+  margin: auto;
+  color: white;
+}
+.bg2 {
+  background-color: var(--primary-color);
+  border-radius: 1rem;
+  width: fit-content;
+  padding: 0.5rem;
+  display: block;
+  margin: auto;
+  color: white;
+}
+#hidden {
+  display: none;
+}
+#hidden-table {
+  display: none;
+}
+.input {
+  border-width: 0.5rem;
+  border-right-color: crimson;
+  border-bottom-color: crimson;
+  border-radius: 0.3rem;
+  width: 30%;
+  height: 2.5rem;
+  font-size: larger;
+}
+.margin {
+  margin: 1rem;
+}
+.button {
+  width: 20%;
+  height: 3rem;
+  border-radius: 2rem;
+  background-color: crimson;
+  color: white;
+  border: none;
+}
+button:hover {
+  background-color: cornflowerblue;
+  color: white;
+}
+.decor {
+  max-width: 60%;
+  text-align: center;
+  display: block;
+  margin: auto;
+}
+
+.text-center {
+  text-align: center;
+}
+.content-center {
+  margin-left: auto;
+  margin-right: auto;
+}
+.table {
+  border-collapse: collapse;
+  /* table-layout: fixed; */
+  width: 60%;
+  text-align: center;
+  border-color: brown;
+  border: 0.4rem solid cornflowerblue;
+}
+.text {
+  font-size: larger;
+}
+tr:hover {
+  background-color: white;
+}
+.italic {
+  font-style: italic;
+}
+.margin-bottom {
+  margin-bottom: 1rem;
+}
+.inline {
+  display: inline;
+}
+
+::placeholder {
+  font-style: italic;
+  font-size: small;
+}
