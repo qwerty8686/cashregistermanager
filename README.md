@@ -1,0 +1,2 @@
+# cashregistermanager
+Created with CodeSandbox
