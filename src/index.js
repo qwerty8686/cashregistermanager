@@ -12,7 +12,11 @@ var notes = [2000, 500, 100, 20, 10, 5, 1];
 var noOfNotes = document.querySelectorAll(".output");
 
 function calculateNotes() {
-  msg.innerText = "";
+  if (cashGiven.value === "") {
+    message("");
+    hiddenTable.style.display = "none";
+    return;
+  }
   if (billAmount.value < 0) {
     message("Bill amount cannot be less than 0");
     hiddenTable.style.display = "none";
