@@ -19,7 +19,6 @@ function calculateNotes() {
   }
   if (Number(billAmount.value) <= 0) {
     message("Bill amount cannot be less than or equal to 0");
-    hiddenTable.style.display = "none";
     return;
   }
   if (Number(cashGiven.value) < 0) {
@@ -53,7 +52,6 @@ function billCheck() {
     hideMsg();
   } else if (Number(billAmount.value) <= 0) {
     message("Bill amount can't be negative value or zero");
-    cashHidden.style.display = "none";
     hiddenTable.style.display = "none";
   }
 }
