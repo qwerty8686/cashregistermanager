@@ -17,8 +17,8 @@ function calculateNotes() {
     hiddenTable.style.display = "none";
     return;
   }
-  if (billAmount.value < 0) {
-    message("Bill amount cannot be less than 0");
+  if (billAmount.value <= 0) {
+    message("Bill amount cannot be less than or equal to 0");
     hiddenTable.style.display = "none";
     return;
   }
@@ -51,8 +51,10 @@ function billCheck() {
     cashHidden.style.display = "block";
     next.style.display = "none";
     hideMsg();
-  } else if (billAmount.value < 0) {
-    message("Bill amount can't be negative value");
+  } else if (billAmount.value <= 0) {
+    message("Bill amount can't be negative value or zero");
+    cashHidden.style.display = "none";
+    hiddenTable.style.display = "none";
   }
 }
 next.addEventListener("click", billCheck);
