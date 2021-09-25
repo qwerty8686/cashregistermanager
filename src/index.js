@@ -19,6 +19,9 @@ function calculateNotes() {
   }
   if (Number(billAmount.value) <= 0) {
     message("Bill amount cannot be less than or equal to 0");
+    hiddenTable.style.display = "none";
+    cashHidden.style.display = "none";
+    next.style.display = "block";
     return;
   }
   if (Number(cashGiven.value) < 0) {
@@ -50,8 +53,11 @@ function billCheck() {
     cashHidden.style.display = "block";
     next.style.display = "none";
     hideMsg();
-  } else if (Number(billAmount.value) <= 0) {
+  } else if (Number(billAmount.value) < 0) {
     message("Bill amount can't be negative value or zero");
+    hiddenTable.style.display = "none";
+  } else if (Number(billAmount.value) === 0) {
+    message("Please enter bill value (greater than 0)");
     hiddenTable.style.display = "none";
   }
 }
